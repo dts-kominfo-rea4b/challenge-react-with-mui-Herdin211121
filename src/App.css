@@ -1,16 +1,26 @@
 body {
-  background-color: aliceblue;
+  background-color: #F0F8FF;
 }
 
 .App {
   text-align: center;
-  font-family: 'Roboto';
+  font-family: 'Georgia, serif';
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.adddata {
+  background-color: #f3f1eb;
+  color: #f3f1eb;
+  width: fit-content;
+  align-self: center;
+  padding: 10px;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

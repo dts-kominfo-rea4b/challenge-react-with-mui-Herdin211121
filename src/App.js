@@ -1,5 +1,14 @@
 import './App.css';
 
+import React from 'react';
+
+
+import Box from '@mui/material/Box';
+
+import Header from './components/Header';
+import ContactForm from './components/ContactForm';
+import Contact from './components/Contact';
+
 // Uncomment untuk memuat daftar kontak
 // import contactsJSON from './data/contacts.json';
 const App = () => {
@@ -12,6 +21,12 @@ const App = () => {
 
   return (
     <div className="App">
+    <Header/>
+    <Box sx={{ display: 'flex', mt:10 }}>
+      <ContactForm />
+      <Contact />
+    </Box>
+
     </div>
   );
 };
