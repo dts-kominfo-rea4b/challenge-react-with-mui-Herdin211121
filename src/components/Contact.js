@@ -15,10 +15,11 @@ const Contact = ({ data }) => {
         <List sx={{ width: '100%', maxWidth: 650, bgcolor: '#DBF6F0', marginLeft: 12 }}>
             {data.map((todo, index) => {
                 return (
-                    <ListItem  key={index} divider>
+                    <ListItem key={index} divider>
                         <ListItemAvatar>
-                            <Avatar src={todo.photo}>
-                                <ImageIcon />
+                            <Avatar >
+                                {/* <ImageIcon /> */}
+                                <img src={todo.photo}/>
                             </Avatar>
                         </ListItemAvatar>
                         <ListItemText primary={todo.name} secondary={
