@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 import Header from './components/Header';
 import ContactForm from './components/ContactForm';
 import Contact from './components/Contact';
-import contactsJSON from './data/contacts.json';
+import contacts from './data/contacts.json';
 
 // Uncomment untuk memuat daftar kontak
 // import contactsJSON from './data/contacts.json';
@@ -15,7 +15,7 @@ const App = () => {
 
   //console.log(contactsJSON);
   // contactsJSON
-  const [data, setData] = useState(contactsJSON);
+  const [data, setData] = useState(contacts);
   // const [data, setData] = useState([]);
   // const x = JSON.parse(JSON.stringify(contactsJSON));
   const handleClick = (name, phone, email, url) => {
@@ -39,7 +39,7 @@ const App = () => {
 
   };
 
-  //console.log(data);
+  //console.log(contacts[0]);
 
   // Masukkan Header dan lakukan map untuk Contact ke dalam div App
   // untuk membuat daftar kontak bisa menggunakan MUI list
