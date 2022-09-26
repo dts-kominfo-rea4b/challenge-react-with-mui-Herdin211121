@@ -2,7 +2,7 @@
 // Contact component dapat berupa MUI ListItem
 // https://mui.com/material-ui/react-list/#folder-list
 import React from 'react';
-import { List, ListItem, ListItemText, ListItemAvatar, Avatar, Divider } from '@mui/material';
+import { List, ListItem, ListItemText, ListItemAvatar, Avatar } from '@mui/material';
 import ImageIcon from '@mui/icons-material/Image';
 import WorkIcon from '@mui/icons-material/Work';
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
@@ -22,12 +22,7 @@ const Contact = ({ data }) => {
                                 <img src={todo.photo}/>
                             </Avatar>
                         </ListItemAvatar>
-                        <ListItemText primary={todo.name} secondary={
-                            <div>
-                                <div>{todo.phone}</div>
-                                <div>{todo.email}</div>
-                            </div>
-                        } />
+                        <ListItemText primary={todo.name} secondary={ todo.phone + "\n" + todo.email} />
                     </ListItem>
                 );
             })}
